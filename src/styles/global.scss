@@ -1,0 +1,223 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom right, #fef6ec, #e6f7f4);
+  color: #333;
+  margin: 0;
+  padding: 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff8ed;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+
+  .nav-links a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.2s;
+
+    &:hover {
+      color: #f8b400;
+    }
+  }
+}
+
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.goal-list {
+    max-width: 500px;
+    margin: auto;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  
+    h2 {
+      margin-bottom: 1rem;
+    }
+  
+    .input-group {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 1rem;
+  
+      input {
+        flex: 1;
+        padding: 0.5rem;
+      }
+  
+      button {
+        padding: 0.5rem 1rem;
+      }
+    }
+  
+    ul {
+      list-style: none;
+      padding: 0;
+  
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.6rem;
+        border-bottom: 1px solid #ddd;
+  
+        &.completed span {
+          text-decoration: line-through;
+          color: gray;
+        }
+  
+        button {
+          background: none;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .quote-box {
+    background: #fff6e9;
+    padding: 1.5rem;
+    border-left: 6px solid #f8b400;
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 600px;
+    font-style: italic;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    animation: fadeIn 0.4s ease;
+
+  
+    .author {
+      text-align: right;
+      font-weight: bold;
+      margin-top: 0.5rem;
+      font-style: normal;
+    }
+  
+    .quote-buttons {
+      margin-top: 1rem;
+      display: flex;
+      gap: 10px;
+  
+      button {
+        padding: 0.5rem 1rem;
+        background: #f8b400;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.2s ease, transform 0.2s ease;
+
+  
+        &:hover {
+          background: #d89e00;
+          transform: scale(1.03);
+        }
+      }
+    }
+  
+    .favorites {
+      background: #fef9f4;
+      border-radius: 10px;
+      padding: 1rem;
+      margin-top: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    
+      h4 {
+        margin-bottom: 0.5rem;
+      }
+    
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+    
+      .favorite-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.75rem;
+        background: #fff;
+        padding: 0.75rem;
+        border-radius: 6px;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    
+        button {
+          background: none;
+          border: none;
+          cursor: pointer;
+          font-size: 1rem;
+        }
+    
+        &:hover {
+          background: #fff5e6;
+        }
+      }
+    }
+  }
+
+.progress-chart {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #f3fdf4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  
+    h2 {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  }
+  
+
+  .goal-stats {
+    background: #eef6f8;
+    padding: 0.75rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  
+    p {
+      margin: 0.25rem 0;
+    }
+  }
+  
+  .streak-stats {
+    background: #fff3ec;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  
+    h3 {
+      margin-bottom: 0.5rem;
+    }
+  
+    p {
+      margin: 0.25rem 0;
+    }
+  }
+  
